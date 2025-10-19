@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BRUET KEVIN — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="rond">
+          <img src="PPia.png" alt="Photo de profil" class="photo-rond">
+        </div>
+        <div>
+          <h1><span class="neon">BRUET KEVIN</span></h1>
+          <div class="subtitle">Étudiant · Pré-MSc — Epitech (depuis sept. 2025)</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card intro" id="about">
+          <h2>Développeur &amp; Aspirant spécialiste en <span class="accent">Cybersécurité</span></h2>
+          <p>Étudiant en reconversion en pré-MSc à Epitech depuis septembre 2025, je suis à la recherche d'une alternance à partir de janvier 2026 pour monter en compétences en IT, cybersécurité ou développement : je suis curieux, autonome et motivé à apprendre. J'ai pour projet de continuer ma formation en MSc Cybersécurité à Epitech à partir de septembre 2026.</p>
+
+          <div class="cta">
+            <button class="btn" onclick="document.location='#projects'">Voir mes projets</button>
+            <a class="btn secondary" href="mailto:bruet.kevin.pro@gmail.com">Contacter</a>
+          </div>
+
+          <div class="skills-section">
+            <strong class="muted">Langages &amp; outils :</strong>
+            <div class="skills" id="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">Java</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Python</div>
+              <div class="skill">PHP</div>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="hero-card contact-card">
+            <strong class="muted">Contact rapide</strong>
+            <div class="quick-links">
+              <a href="mailto:Bruet.kevin.pro@gmail.com" class="btn">bruet.kevin.pro@gmail.com</a>
+              <a href="https://linkedin.com/in/Kevin-bruet" class="btn">Kevin-bruet</a>
+              <a href="https://github.com/Kevinepitech-oss" class="btn">Kevinepitech-oss</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h3>Projets récents</h3>
+        <div class="projects">
+          <article class="card">
+            <h3>CV</h3>
+            <p>CV en ligne.</p>
+            <small class="muted">Tech : HTML, CSS</small>
+          </article>
+
+          <article class="card">
+            <h3>Job card</h3>
+            <p>Création d'un site de recrutement fictif.</p>
+            <small class="muted">Tech : HTML, CSS, JS, PHP</small>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h3>Contact</h3>
+        <form id="contact-form">
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="Ton email">
+
+          <label>Message</label>
+          <textarea name="message" required placeholder="Ton message" rows="4"></textarea>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Envoyer</button>
+          </div>
+
+          <p id="form-status"></p>
+        </form>
+
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="muted">© 2025 BRUET KEVIN — Pré-MSc Cybersécurité • Epitech</div>
+      <div class="socials">
+        <a class="icon-btn" href="https://linkedin.com/in/Kevin-bruet" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="icon-btn" href="https://github.com/Kevinepitech-oss" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
