@@ -29,6 +29,10 @@
         <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="menu-toggle" aria-label="Menu mobile">
+        ☰
+      </button>
+
     </header>
 
     <main>
@@ -117,5 +121,14 @@
     </footer>
   </div>
   <script src="script.js"></script>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
+
 </body>
 </html>
