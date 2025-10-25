@@ -10,6 +10,7 @@
   --base-spacing: 1rem;
 }
 
+
 html, body {
   height: 100%;
   margin: 0;
@@ -203,6 +204,49 @@ footer {
   color: var(--neon); cursor:pointer; transition:color 0.3s ease;
 }
 .menu-toggle:hover { color: var(--neon-2); }
+
+
+.contact-card .divider {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.cv-box h4 {
+  margin: 0 0 0.4rem 0;
+  color: var(--neon);
+  font-size: 1rem;
+}
+
+.cv-box p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.cv-box .btn.download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(25,193,255,0.08), rgba(69,240,255,0.04));
+}
+.cv-box .btn.download:hover {
+  background: linear-gradient(90deg, rgba(25,193,255,0.14), rgba(69,240,255,0.08));
+}
+
+.projects .card {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.projects .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 1.5rem rgba(25,193,255,0.18);
+}
+.projects .card a.btn {
+  margin-top: 0.8rem;
+  align-self: flex-start;
+}
 
 @media (max-width: 980px) {
   .hero { grid-template-columns:1fr; }

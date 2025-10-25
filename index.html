@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
   <canvas id="bg-canvas"></canvas>
   <div class="wrap">
@@ -49,17 +50,17 @@
           <div class="skills-section">
             <strong class="muted">Langages &amp; outils :</strong>
             <div class="skills" id="skills">
-              <div class="skill">HTML</div>
-              <div class="skill">CSS</div>
-              <div class="skill">Java</div>
-              <div class="skill">JavaScript</div>
-              <div class="skill">Python</div>
-              <div class="skill">PHP</div>
+              <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+              <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+              <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+              <div class="skill"><i class="fa-brands fa-php"></i> PHP</div>
+              <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+              <div class="skill"><i class="fa-brands fa-java"></i> Java</div>
             </div>
           </div>
         </div>
 
-        <aside>
+                <aside>
           <div class="hero-card contact-card">
             <strong class="muted">Contact rapide</strong>
             <div class="quick-links">
@@ -67,26 +68,61 @@
               <a href="https://linkedin.com/in/Kevin-bruet" class="btn">Kevin-bruet</a>
               <a href="https://github.com/Kevinepitech-oss" class="btn">Kevinepitech-oss</a>
             </div>
+
+            <hr class="divider">
+
+            <div class="cv-box">
+              <h4><i class="fa-solid fa-file-pdf"></i> Mon CV</h4>
+              <p>Tu peux consulter ou télécharger mon CV complet :</p>
+              <a href="CVBruet.pdf" target="_blank" class="btn download">
+                <i class="fa-solid fa-download"></i> Télécharger mon CV
+              </a>
+            </div>
           </div>
         </aside>
+
+
+      
+       
+
       </section>
+
+        
 
       <section id="projects" class="projects-section">
-        <h3>Projets récents</h3>
-        <div class="projects">
-          <article class="card">
-            <h3>CV</h3>
-            <p>CV en ligne.</p>
-            <small class="muted">Tech : HTML, CSS</small>
-          </article>
+  <h3>Projets récents</h3>
+  <div class="projects">
 
-          <article class="card">
-            <h3>Job card</h3>
-            <p>Création d'un site de recrutement fictif.</p>
-            <small class="muted">Tech : HTML, CSS, JS, PHP</small>
-          </article>
-        </div>
-      </section>
+    <article class="card" onclick="window.open('https://github.com/Kevinepitech-oss/digital_resume', '_blank')">
+      <h3>CV</h3>
+      <p>CV en ligne, réalisé en HTML et CSS.</p>
+      <small class="muted">Tech : HTML, CSS</small>
+      <a href="https://github.com/Kevinepitech-oss/CV" target="_blank" class="btn">
+        <i class="fa-brands fa-github"></i> Voir le repo
+      </a>
+    </article>
+
+    <article class="card" onclick="window.open('https://github.com/EpitechMscProPromo2028/T-WEB-501-PAR_3', '_blank')">
+      <h3>Job Card</h3>
+      <p>Création d’un site de recrutement fictif.</p>
+      <small class="muted">Tech : HTML, CSS, JS, PHP</small>
+      <a href="https://github.com/Kevinepitech-oss/Job-Card" target="_blank" class="btn">
+        <i class="fa-brands fa-github"></i> Voir le repo
+      </a>
+    </article>
+
+    <article class="card" onclick="window.open('https://github.com/Kevinepitech-oss/Portfolio', '_blank')">
+      <h3>Portfolio</h3>
+      <p>Mon portfolio personnel, présentant mes compétences et projets.</p>
+      <small class="muted">Tech : HTML, CSS, JS</small>
+      <a href="https://github.com/Kevinepitech-oss/Portfolio" target="_blank" class="btn">
+        <i class="fa-brands fa-github"></i> Voir le repo
+      </a>
+    </article>
+
+  </div>
+</section>
+
 
       <section id="contact" class="contact-section">
         <h3>Contact</h3>
@@ -129,6 +165,8 @@
     nav.classList.toggle('open');
   });
 </script>
+
+
 
 </body>
 </html>
