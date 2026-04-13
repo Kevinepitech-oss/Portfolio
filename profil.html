@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BRUET KEVIN — Accueil</title>
+  <title>BRUET KEVIN — Profil</title>
   <link id="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2305080f'/%3E%3Ctext x='50' y='70' font-size='55' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EKB.%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -18,8 +18,8 @@
       </div>
       <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
       <div class="nav-links" id="nav-links">
-        <a href="index.html" class="active-link"></a>
-        <a href="profil.html"></a>
+        <a href="index.html"></a>
+        <a href="profil.html" class="active-link"></a>
         <a href="skills.html"></a>
         <a href="projects.html"></a>
         <a href="contact.html"></a>
@@ -31,27 +31,32 @@
     </div>
   </nav>
   <main>
-    <section id="hero-section" class="reveal">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <h1 id="hero-title"></h1>
-          <p id="hero-subtitle"></p>
-          <div class="hero-buttons">
-            <a href="profil.html" class="btn-primary" id="hero-btn-profile"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary" id="hero-btn-cv"></a>
+    <header class="page-header reveal">
+      <h1 id="profile-header-title"></h1>
+      <p id="profile-header-subtitle"></p>
+      <a href="#content-start" class="scroll-indicator" id="scroll-indicator"><i class="fa-solid fa-chevron-down"></i></a>
+    </header>
+    <section id="content-start" class="section-dark reveal">
+      <div class="container" style="max-width: 1200px;">
+        <div class="timelines-wrapper">
+          <div class="timeline-column">
+            <h2 class="section-title" id="timeline-exp-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 5px;"></h2>
+            <p class="section-subtitle" id="timeline-exp-subtitle" style="text-align: left; margin-left: 0; margin-bottom: 30px;"></p>
+            <div class="timeline" id="dynamic-timeline-exp"></div>
+          </div>
+          <div class="timeline-column">
+            <h2 class="section-title" id="timeline-edu-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 5px;"></h2>
+            <p class="section-subtitle" id="timeline-edu-subtitle" style="text-align: left; margin-left: 0; margin-bottom: 30px;"></p>
+            <div class="timeline" id="dynamic-timeline-edu"></div>
           </div>
         </div>
-        <div class="hero-image reveal" style="transition-delay: 0.2s;">
-          <img src="assets/PPia.png" alt="Photo de profil Kevin Bruet">
-        </div>
       </div>
-      <a href="#content-start" class="scroll-indicator" id="scroll-indicator"><i class="fa-solid fa-chevron-down"></i></a>
     </section>
-    <section id="content-start" class="section-light reveal">
+    <section class="section-light reveal">
       <div class="container">
-        <h2 class="section-title" id="features-title"></h2>
-        <p class="section-subtitle" id="features-subtitle"></p>
-        <div class="expertise-grid" id="dynamic-features"></div>
+        <h2 class="section-title" id="passions-title"></h2>
+        <p class="section-subtitle" id="passions-subtitle"></p>
+        <div class="passions-grid" id="dynamic-passions"></div>
       </div>
     </section>
   </main>
