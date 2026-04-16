@@ -134,7 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const majorContainer = document.getElementById('dynamic-major-projects'); majorContainer.innerHTML = '';
       data.projects.major.forEach(project => {
         const reverseClass = project.reverse ? 'reverse' : '';
-        majorContainer.innerHTML += `<div class="case-study ${reverseClass} reveal active"><div class="case-text"><span class="badge">${project.badge}</span><h3>${project.title}</h3><p>${project.description}</p><a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn-secondary"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> ${data.projectsPage.btnCode}</a></div><div class="case-image"><div class="placeholder-img"><i class="fa-solid ${project.icon}"></i></div></div></div>`;
+        const mediaHTML = project.image ? `<img src="${project.image}" alt="${project.title}">` : `<i class="fa-solid ${project.icon}"></i>`;
+        majorContainer.innerHTML += `<div class="case-study ${reverseClass} reveal active"><div class="case-text"><span class="badge">${project.badge}</span><h3>${project.title}</h3><p>${project.description}</p><a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn-secondary"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> ${data.projectsPage.btnCode}</a></div><div class="case-image"><div class="placeholder-img" style="${project.image ? 'border: none; background: transparent;' : ''}">${mediaHTML}</div></div></div>`;
       });
       const minorContainer = document.getElementById('dynamic-minor-projects'); minorContainer.innerHTML = '';
       data.projects.minor.forEach((project, index) => {
